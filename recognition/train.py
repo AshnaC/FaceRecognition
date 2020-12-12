@@ -42,7 +42,7 @@ def getFacesFromDir(directory):
         face = extractFace(path)
         if face is not None:
             faces.append(face)
-    return faces;
+    return faces
 
 
 def load_dataset(dir_path):

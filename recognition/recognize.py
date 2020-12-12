@@ -18,8 +18,6 @@ with open('recognition/models/params.pkl', 'rb') as fid:
 
 def extractFaces(x):
     # Loading images
-    # img = cv2.imread(file)
-    # img_cpy = img.copy()
     # Convert the image to RGB,
     # In case the image has an alpha channel or is black and white.
     npimg = np.fromfile(x, np.uint8)
@@ -72,7 +70,6 @@ def recognizeSingleImage(file_name):
     X = normaliseEmbeddings(X)
     pred_label = svc_model.predict(X)
     pred_prob = np.amax(svc_model.predict_proba(X), axis=1)
-    #     img = cv2.imread(file_name)
     faces = []
     print('People',pred_prob)
     for i, prob in enumerate(pred_prob):
