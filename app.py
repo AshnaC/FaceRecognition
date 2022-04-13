@@ -13,5 +13,6 @@ def index():
 
 
 if __name__ == "__main__":
+    # To be removed before deployement 
     # app.debug = True
     app.run()
