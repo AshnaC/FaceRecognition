@@ -1,5 +1,7 @@
 # FaceRecognition
 
+Deployed in : https://portfolio-apps-ashna.herokuapp.com/face
+
 The project contains the code for Face Recognition System to identify the last 9 presidents of the US.
 
 A Face recognition system developed using embedding from Google’s FaceNet architecture, trained to detect the last nine presidents of the US.
@@ -13,5 +15,3 @@ This embeddings is used to train Support Vector Classifier (SVC) to identify fac
 Direct Deployment to Heroku was not possible due to the large slack size since the Facenet keras model file size exceeds free layer size.
 
 A sample implementation gif is added in the below link for reference.
-
-https://portfolio-apps-ashna.herokuapp.com/face
